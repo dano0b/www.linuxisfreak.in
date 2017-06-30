@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.2
+  - jruby
+sudo: false
+env:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+install: gem install html-proofer
+script: htmlproofer index.html
