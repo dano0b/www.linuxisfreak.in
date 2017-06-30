@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-    - HEAD
+    - 2.4
 sudo: false
 env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
