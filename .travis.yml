@@ -5,4 +5,4 @@ sudo: false
 env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install: gem install html-proofer
-script: htmlproofer index.html
+script: htmlproofer --http-status-ignore 999 index.html
