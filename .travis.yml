@@ -7,4 +7,4 @@ env:
     global:
         - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install: gem install html-proofer
-script: htmlproofer --http-status-ignore 999 index.html
+script: htmlproofer --http-status-ignore 999,403,0 index.html
