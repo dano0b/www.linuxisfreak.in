@@ -3,6 +3,7 @@ rvm:
     - 2.4
 sudo: false
 env:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    global:
+        - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install: gem install html-proofer
 script: htmlproofer --http-status-ignore 999 index.html
